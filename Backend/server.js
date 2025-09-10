@@ -12,7 +12,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('✅ MongoDB connected'))
   .catch(err => console.error('❌ MongoDB connection error:', err));
 
-const User = require('./models/User');
+const User = require('./Models/User');
 const ModelVersion = require('./models/ModelVersion');
 
 app.get('/api/test', async (req, res) => {
