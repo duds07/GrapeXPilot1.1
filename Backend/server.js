@@ -13,7 +13,7 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.error('❌ MongoDB connection error:', err));
 
 const User = require('./Models/User');
-const ModelVersion = require('./models/ModelVersion');
+const ModelVersion = require('./Models/ModelVersion');
 
 app.get('/api/test', async (req, res) => {
   try {
